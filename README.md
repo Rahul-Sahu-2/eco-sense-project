@@ -1,52 +1,74 @@
-# Intelligent waste segregation system
-This project demonstrates waste detection using a YOLOv8 (You Only Look Once) object detection model. It identifies recyclable, non-recyclable, and hazardous waste items in a webcam stream.
+# 🌌 EcoSense: AI-Powered Waste Management System
 
-Our datasets used to train:
-https://universe.roboflow.com/ai-project-i3wje/waste-detection-vqkjo/model/3
+EcoSense is a state-of-the-art waste detection and management platform that rewards citizens for environmental contributions using blockchain technology. Featuring the **Aurora Cosmic** theme, it provides a "Satellite Command Center" experience for administrators and a seamless reporting flow for citizens.
 
-Colab:
-https://colab.research.google.com/drive/1dHv5QUuz2NkkgzeKBoO4DLAhLg9mOrzv?usp=sharing
+---
 
-Live:
-https://intelligent-waste-segregation-system.streamlit.app
+## ✨ Key Features
 
+### 📡 Satellite Command Center (Admin Dashboard)
+- **Aurora Cosmic UI**: A high-tech, glass-morphic interface designed for visual excellence.
+- **Dynamic Real-time Map**: Integrated with Light Voyager tiles for precise waste tracking.
+- **Smart Analytics**: Real-time statistics on reports, top contributors, and waste distribution.
+- **Automated Reporting**: Export comprehensive waste data as CSV for offline analysis.
 
-## Setup
+### 📸 AI Waste Detection
+- **Dual-Model Intelligence**: Utilizes CNN and YOLOv8 for accurate waste identification.
+- **Instant Verification**: Analyzes citizen uploads to confirm waste presence and type (Recyclable, Hazardous, etc.).
+- **Confidence Scoring**: Provides transparency with percentage-based accuracy bars.
 
-**Clone the Repository:**
+### 🦊 Web3 & Blockchain Integration
+- **MetaMask Connectivity**: Seamlessly connect Polygon/Ethereum wallets.
+- **Automated Rewards**: Earn tokens automatically upon verified waste reports.
+- **Persistent Sessions**: Remembers your wallet address for a hassle-free experience.
+
+### 🔐 Secure Authentication
+- **Glass-morphic Auth**: Premium Sign-in/Sign-up experience.
+- **JWT Protection**: Secure API communication with token-based authorization.
+- **Cross-Platform Compatibility**: Robust password hashing optimized for Windows and Linux.
+
+---
+
+## 🚀 Quick Start
+
+### 1. Prerequisites
+- Python 3.10+
+- Node.js 18+
+- MetaMask Browser Extension
+
+### 2. Backend Setup
 ```bash
-git clone https://github.com/boss4848/waste-detection.git
-cd waste-detection
-```
-**Install Dependencies:**
-```bash
+# Install dependencies
 pip install -r requirements.txt
+
+# Start the API server
+python -m uvicorn backend.main:app --reload --port 8000
 ```
-**Run the Application**
+
+### 3. Frontend Setup
 ```bash
-streamlit run app.py
+cd frontend
+npm install
+npm run dev
 ```
-Open your web browser and navigate to the provided URL (usually http://localhost:8501). You will see the Waste Detection app.
 
-## Project Structure
+### 4. Direct Launch
+Use the included `start_project.bat` file in the root directory for a one-click launch of both services.
 
-- `app.py`: Main application file containing Streamlit code.
-- `helper.py`: Helper functions for waste detection using the YOLO model.
-- `settings.py`: Configuration settings, including the path to the YOLO model and waste types.
-- `train.py`: To train the model
+---
 
-## Classifying Waste Items
+## 🛠 Tech Stack
+- **Frontend**: React, Vite, Leaflet, Axios, CSS3 (Glass-morphism)
+- **Backend**: FastAPI, Pydantic, Python-Jose
+- **AI/ML**: TensorFlow (CNN), Ultralytics (YOLOv8), OpenCV
+- **Web3**: Web3.py, MetaMask API
 
-- **RECYCLABLE**=['cardboard_box','can','plastic_bottle_cap','plastic_bottle','reuseable_paper']
-- **NON_RECYCLABLE**=['plastic_bag','scrap_paper','stick','plastic_cup','snack_bag','plastic_box','straw','plastic_cup_lid','scrap_plastic','cardboard_bowl','plastic_cultery']
-- **HAZARDOUS**=['battery','chemical_spray_can','chemical_plastic_bottle','chemical_plastic_gallon','light_bulb','paint_bucket']
+---
 
-## Screenshots
+## 🌍 Contribution
+This project is dedicated to making our planet cleaner through AI and decentralization. 
 
-![screenshot2](screenshot2.png)
+**Owner**: [Rahul-Sahu-2](https://github.com/Rahul-Sahu-2)
 
-## References
-
-- [Streamlit Documentation](https://docs.streamlit.io/)
-- [YOLO Documentation](https://github.com/ultralytics/yolov5)
-
+---
+*Created with ❤️ for EcoSense Project*
