@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+.venv/
+backend/.venv/
+frontend/node_modules/
+
+# Sensitive Data
+.env
+backend/.env
+frontend/.env
+users.json
+backend/users.json
+test_reg.py
+test_login.py
+
+# Logs & Temporary Files
+*.log
+*.pyc
+__pycache__/
+.DS_Store
+
+# Large Model Files (Optional but recommended to ignore)
+*.pt
+*.h5
+
+# OS Files
+Thumbs.db
+desktop.ini
